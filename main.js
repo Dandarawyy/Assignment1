@@ -26,13 +26,13 @@ for (let i=1; i<=10; i++){
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let evenNum = numbers.filter(nums=>nums % 2 === 0);
 console.log(evenNum);
-
+console.log("-----------------------------");
 //5 Use the spread operator to merge two arrays, then return the merged array.
 
 let array1 = [1, 2, 3, 4, 5];
 let array2 = [6, 7, 8, 9, 10];
-let mergedArray = [...array1, ...array2];
-console.log(mergedArray);
+let merged_Array = array1.concat(array2);
+console.log(merged_Array);
 
 //6 Use a switch statement to return the day of the week given a number (1 = Sunday ...., 7 = Saturday).
 
