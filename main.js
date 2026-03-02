@@ -102,8 +102,15 @@ function sum(...nums){
 }
 console.log(sum(1, 2, 3, 4, 5));
 
-//12 Write a function that returns a promise which resolves after 4 seconds with a 'Success' message.
-
+//12 Write a function that returns a promise which resolves after 3 seconds with a 'Success' message.
+function promise(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            resolve("Success")
+        },3000);
+    })
+}
+promise().then((message)=>{console.log(message);});
 
 //13 Write a function to find the largest number in an array.
 
